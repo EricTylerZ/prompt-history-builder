@@ -1,0 +1,16 @@
+(Abridged) Prompt History for prompt-history-builder (Feb 2025)
+
+[User] "hey so im trying to learn cmd tools, and built a really small repository..."
+- Let’s walk through using Git and cmd to track changes—started the journey to parse chat logs.
+
+[User] "oops the file i saved was the prompt_history"
+- Shifted focus to parsing a specific file, revealing the need for flexible project handling.
+
+[User] "actually we want the logs\ and outputs\ under each project within prompt-history builder"
+- Defined the nested project structure, splitting dirs and parsing into separate scripts.
+
+[User] "well we havent done anything with git on this project yet"
+- Set up Git with .gitignore to share the tool without logs, aiming for a GitHub repo.
+
+[User] "I want to make a new repository on github for this project readme..."
+- Finalized the goal: a clean repo with README and root prompt_history.txt for future chats.

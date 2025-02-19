@@ -15,5 +15,5 @@
 [User] "I want to make a new repository on github for this project readme..."
 - Launched https://github.com/EricTylerZ/prompt-history-builder to host the tool.
 
-[User] "the ultimate goal is ending abortion and destruction of human embryos..."
+[User] "the ultimate goal is ending abortion. destruction of human embryos, and artificial creation of humans in embryo format..."
 - Defined the mission: tools like this support advocacy and documentation for pro-life causes.

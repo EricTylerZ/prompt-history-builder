@@ -4,4 +4,3 @@ __pycache__/
 .env
 prompts.json 
 models.json 
-models_output.txt

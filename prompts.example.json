@@ -1,0 +1,16 @@
+{
+  "prompts": {
+    "p1": {
+      "description": "Detailed with assistant context",
+      "text": "Parse this chat log into an abridged prompt history for a pro-life tech project. For each user prompt, output: [User] 'prompt excerpt...' - clear summary of what the user was doing with the LLM (e.g., learning command-line tools, managing a Git repository), followed by [Assistant] - how the LLM assisted. If the LLM failed or misunderstood, append (LLM Failure: description) on a new line. Make it concise yet informative."
+    },
+    "p2": {
+      "description": "Simple, user-focused",
+      "text": "Parse this chat log into an abridged prompt history for a pro-life tech project. For each user prompt, output: [User] 'prompt excerpt...' - concise summary of what the user was trying to achieve. If the LLM failed or misunderstood, append (LLM Failure: description) on a new line. Keep it short and to the point."
+    },
+    "p3": {
+      "description": "Tool-building focused, outcome-oriented",
+      "text": "Parse this chat log into an abridged prompt history for a prompt-history-builder tool which is part of a pro-life tech project. Goal: Build a tool to track and manage prompt history using Git. For each key user prompt decide if it moved the project forward, and if it was actually helpf, output: [User] 'prompt excerpt...' - what the user needed for the tool, followed by [Assistant] - how the LLM helped achieve it, and Outcome: result tied to tool development. Summarize LLM impact and any failures at the end. Keep it concise, numbered, and focused on tool-building. If there were minor bug type fixes you can skip the prompt"
+    }
+  }
+}

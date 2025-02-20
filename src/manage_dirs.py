@@ -1,11 +1,10 @@
-# prompt-history-builder/src/manage_dirs.py
 import os
 
-def setup_project_dirs(project_name, tool_root):
+def setup_project_dirs(project_name, tool_root, test_mode=False):
     """Set up project directories and return paths."""
     projects_dir = os.path.join(tool_root, "projects")
     project_dir = os.path.join(projects_dir, project_name)
-    output_dir = os.path.join(project_dir, "output")
+    output_dir = os.path.join(project_dir, "output", "test" if test_mode else "")
     logs_dir = os.path.join(project_dir, "logs")
     
     os.makedirs(output_dir, exist_ok=True)
@@ -15,8 +14,9 @@ def setup_project_dirs(project_name, tool_root):
 
 def suggest_move(input_file, logs_dir):
     """Suggest moving the input file if not in logs."""
-    input_dir = os.path.dirname(input_file)
-    if input_dir != logs_dir:
+    input_path = os.path.abspath(input_file)
+    logs_path = os.path.abspath(logs_dir)
+    if not input_path.startswith(logs_path):
         move_cmd = f"move \"{input_file}\" \"{logs_dir}\""
         print(f"Suggestion: Move your original log file to the project's logs folder:\n  {move_cmd}")
 
